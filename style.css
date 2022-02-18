@@ -1,0 +1,89 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}   
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+    background-image: linear-gradient(to right,#12c2e9,#c471ed, #f64f59);
+}
+h1{
+    margin: 0px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.596);
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+    color: white;
+    font-family: Poppins;
+    height: 7vh;
+}
+
+#section{
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+#calc{
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 70%;
+    width: 30%;
+}
+#input-text{
+    margin:5px;
+    border-radius: 10px;
+    background-color: #ffffff59;
+    border: 2px solid white;
+    height: 15%;
+    width:auto;
+    font-size: Poppins;
+    font-size: 30px;
+    text-align: center;
+}
+#table{
+    height: 80%;
+    border: 2px solid white;
+    margin:5px;
+    border-radius: 10px;
+    border-spacing: 10px;
+}
+
+td{
+    border-spacing: 5px;
+    width: 30px;
+    transition-duration: 0.2s;
+    background-color: rgba(240, 248, 255, 0.767);
+    border-radius: 50px;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 900;
+}
+.double-span{
+    column-span:2 ;
+}
+td:hover{
+    background-color: #eb79c8ea;
+    transition-duration: 0.2s;
+    color: white;
+    border: 2px solid rgb(228, 128, 241);
+}
+@media only screen and (max-width: 720px) {
+    #calc{
+        width: 90%;
+        height: 70%;
+    }
+}

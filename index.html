@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div id="section">
+        <div id="calc">
+            <input readonly type="text" id="input-text">
+            <table id="table">
+                <tr>
+                    <td value="_" onclick="remove()"> C </td>
+                    <td value="/" onclick="cal('/')">/</td>
+                    <td value="AC" colspan="2" onclick="clr()">AC</td>
+                </tr>
+                <tr>
+                    <td value="7" onclick="cal('7')">7</td>
+                    <td value="8" onclick="cal('8')">8</td>
+                    <td value="9" onclick="cal('9')">9</td>
+                    <td value="*" onclick="cal('*')">X</td>
+                </tr>
+                <tr>
+                    <td value="4" onclick="cal('4')">4</td>
+                    <td value="5" onclick="cal('5')">5</td>
+                    <td value="6" onclick="cal('6')">6</td>
+                    <td value="-" onclick="cal('-')">-</td>
+                </tr>
+                <tr>
+                    <td value="1" onclick="cal('1')">1</td>
+                    <td value="2" onclick="cal('2')">2</td>
+                    <td value="3" onclick="cal('3')">3</td>
+                    <td value="+" onclick="cal('+')">+</td>
+                </tr>
+                <tr>
+                    <td value="0" onclick="cal('0')">0</td>
+                    <td value="." onclick="cal('.')">.</td>
+                    <td value="=" colspan="2" onclick="calculate()">=</td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
